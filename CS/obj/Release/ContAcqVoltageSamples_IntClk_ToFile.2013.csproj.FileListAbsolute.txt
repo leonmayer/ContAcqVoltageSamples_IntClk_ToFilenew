@@ -11,3 +11,15 @@ C:\Users\Leon\Desktop\ContAcqVoltageSamples_IntClk_ToFile\CS\obj\Release\ContAcq
 C:\Users\Leon\Desktop\ContAcqVoltageSamples_IntClk_ToFile\CS\obj\Release\ContAcqVoltageSamples_IntClk_ToFile.2013.csproj.CoreCompileInputs.cache
 C:\Users\Leon\Desktop\ContAcqVoltageSamples_IntClk_ToFile\CS\obj\Release\ContAcqVoltageSamples_IntClk_ToFile.2013.csproj.CopyComplete
 C:\Users\Leon\Desktop\ContAcqVoltageSamples_IntClk_ToFile\CS\obj\Release\ContAcqVoltageSamples_IntClk_ToFile.exe
+C:\Users\Leon\Documents\Studium\Job\MedIT\Daq_Polar\ContAcqVoltageSamples_IntClk_ToFile\CS\bin\Release\ContAcqVoltageSamples_IntClk_ToFile.exe
+C:\Users\Leon\Documents\Studium\Job\MedIT\Daq_Polar\ContAcqVoltageSamples_IntClk_ToFile\CS\bin\Release\NationalInstruments.Common.dll
+C:\Users\Leon\Documents\Studium\Job\MedIT\Daq_Polar\ContAcqVoltageSamples_IntClk_ToFile\CS\bin\Release\NationalInstruments.DAQmx.dll
+C:\Users\Leon\Documents\Studium\Job\MedIT\Daq_Polar\ContAcqVoltageSamples_IntClk_ToFile\CS\bin\Release\NationalInstruments.NiLmClientDLL.dll
+C:\Users\Leon\Documents\Studium\Job\MedIT\Daq_Polar\ContAcqVoltageSamples_IntClk_ToFile\CS\bin\Release\NationalInstruments.MStudioCLM.dll
+C:\Users\Leon\Documents\Studium\Job\MedIT\Daq_Polar\ContAcqVoltageSamples_IntClk_ToFile\CS\bin\Release\NationalInstruments.Common.xml
+C:\Users\Leon\Documents\Studium\Job\MedIT\Daq_Polar\ContAcqVoltageSamples_IntClk_ToFile\CS\bin\Release\NationalInstruments.DAQmx.xml
+C:\Users\Leon\Documents\Studium\Job\MedIT\Daq_Polar\ContAcqVoltageSamples_IntClk_ToFile\CS\obj\Release\NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile.MainForm.resources
+C:\Users\Leon\Documents\Studium\Job\MedIT\Daq_Polar\ContAcqVoltageSamples_IntClk_ToFile\CS\obj\Release\ContAcqVoltageSamples_IntClk_ToFile.2013.csproj.GenerateResource.cache
+C:\Users\Leon\Documents\Studium\Job\MedIT\Daq_Polar\ContAcqVoltageSamples_IntClk_ToFile\CS\obj\Release\ContAcqVoltageSamples_IntClk_ToFile.2013.csproj.CoreCompileInputs.cache
+C:\Users\Leon\Documents\Studium\Job\MedIT\Daq_Polar\ContAcqVoltageSamples_IntClk_ToFile\CS\obj\Release\ContAcqVoltageSamples_IntClk_ToFile.2013.csproj.CopyComplete
+C:\Users\Leon\Documents\Studium\Job\MedIT\Daq_Polar\ContAcqVoltageSamples_IntClk_ToFile\CS\obj\Release\ContAcqVoltageSamples_IntClk_ToFile.exe

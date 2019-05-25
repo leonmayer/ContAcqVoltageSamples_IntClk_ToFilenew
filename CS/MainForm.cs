@@ -765,7 +765,7 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
             noofdatlist.Clear();
             datalistfast.Clear();
             InitTimer();
-            InitTimerout();
+            //InitTimerout();
 
             if (runningTask == null)
             {
@@ -876,7 +876,7 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
         {
             if (runningTask != null)
             {
-                //Dispose of the task
+                //Dispose of the task                                                                                  m
                 CloseFile();
 
                 runningTask = null;
@@ -983,15 +983,19 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
                     double s = s1 * 10 + s2;
                     double ms = ms1 * 100 + ms2 * 10 + ms3;
 
+                    double randomnum = writerout();
+
                     l.Add(h);
                     l.Add(m);
                     l.Add(s);
                     l.Add(ms);
+                    l.Add(randomnum);
 
                     datalistfast.Add(h);
                     datalistfast.Add(m);
                     datalistfast.Add(s);
                     datalistfast.Add(ms);
+                    datalistfast.Add(randomnum);
                 }
                 //my code
 
@@ -1004,7 +1008,7 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
         }
 
         private Timer timer1;
-        
+
 
         public void InitTimer()
         {
@@ -1028,21 +1032,21 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
             int channelCount = 1;
             int dataCount = datalistfast.Count;
 
-           for (int i = 0; i < dataCount; i++)
-           {
-               for (int j = 0; j < channelCount; j++)
-               {
-                   // Writes data to file
-                   //ArrayList l = datalistfast[j] as ArrayList;
-                   double dataValue = (double)datalistfast[i];
-                   fileBinaryWriterfast.Write((double)dataValue);
-               }
+            for (int i = 0; i < dataCount; i++)
+            {
+                for (int j = 0; j < channelCount; j++)
+                {
+                    // Writes data to file
+                    //ArrayList l = datalistfast[j] as ArrayList;
+                    double dataValue = (double)datalistfast[i];
+                    fileBinaryWriterfast.Write((double)dataValue);
+                }
 
-           }
+            }
 
-           datalistfast.Clear();
-           //fileBinaryWriterfast.Close();
-           
+            datalistfast.Clear();
+            //fileBinaryWriterfast.Close();
+
         }
 
         private Timer timerout;
@@ -1053,7 +1057,7 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
             timerout.Interval = 1000; // in miliseconds
             timerout.Start();
         }
-        
+
         private void writerandtoout(object sender, EventArgs e)
         {
             using (Task digitalWriteTask = new Task())
@@ -1071,20 +1075,50 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
                 Random random = new Random();
                 int randomNumber = random.Next(0, 2);
                 //writer.WriteSingleSamplePort(true, (UInt32)1);
-                
+
                 if (randomNumber == 0)
-                { 
+                {
                     writer.WriteSingleSamplePort(true, (UInt32)0);
                 }
                 else
                 {
                     writer.WriteSingleSamplePort(true, (UInt32)1);
                 }
-                
+
 
 
             }
 
+        }
+
+        private int writerout()
+        {
+            using (Task digitalWriteTask = new Task())
+            {
+                //  Create an Digital Output channel and name it.
+
+                digitalWriteTask.DOChannels.CreateChannel("Dev1/port0", "port0",
+                    ChannelLineGrouping.OneChannelForAllLines);
+
+                //  Write digital port data. WriteDigitalSingChanSingSampPort writes a single sample
+                //  of digital data on demand, so no timeout is necessary.
+
+
+                DigitalSingleChannelWriter writer = new DigitalSingleChannelWriter(digitalWriteTask.Stream);
+                Random random = new Random();
+                int randomNumber = random.Next(0, 2);
+                //writer.WriteSingleSamplePort(true, (UInt32)1);
+
+                if (randomNumber == 0)
+                {
+                    writer.WriteSingleSamplePort(true, (UInt32)0);
+                }
+                else
+                {
+                    writer.WriteSingleSamplePort(true, (UInt32)1);
+                }
+                return randomNumber;
+            }
         }
         private void ReadTextData()
         {
@@ -1196,10 +1230,10 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
                 }
                 else
                 {
-                   // fileBinaryWriter.Write(Convert.ToDouble(channelCount));
-                   // fileBinaryWriter.Write(Convert.ToDouble(dataCount));
-                   //fileBinaryWriter.Write(dataCount.ToString());
-                    
+                    // fileBinaryWriter.Write(Convert.ToDouble(channelCount));
+                    // fileBinaryWriter.Write(Convert.ToDouble(dataCount));
+                    //fileBinaryWriter.Write(dataCount.ToString());
+                    int abc = 5;
                    
                     for (int i = 0; i < dataCount; i++)
                     {
@@ -1215,7 +1249,7 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
 
 
                     timer1.Stop();
-                    timerout.Stop();
+                    //timerout.Stop();
                     fileBinaryWriter.Close();
                     fileBinaryWriterfast.Close();
                     
@@ -1278,7 +1312,7 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
             {
                 FileStream fs = new FileStream(fileNameWrite, FileMode.Create);
                 
-                fileNameWritefast = "C:\\Users\\Leon\\Desktop\\PolarDAQdata\\measurements\\tempdata\\acquisitionData_pre.bin";
+                fileNameWritefast = "C:\\Users\\Leon\\Documents\\Studium\\Job\\MedIT\\Daq_Polar\\PolarDAQdata\\measurements\\tempdata\\acquisitionData_pre.bin";
                 //filePathWriteTextBox.Text = fileNameWrite;
                 //fileToolTip.SetToolTip(filePathWriteTextBox, fileNameWrite);
                 FileStream fsfast = new FileStream(fileNameWritefast, FileMode.Create);
