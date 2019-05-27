@@ -1278,7 +1278,7 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
             {
                 FileStream fs = new FileStream(fileNameWrite, FileMode.Create);
                 
-                fileNameWritefast = "C:\\Users\\leon\\Documents\\MedIT-Leon\\Daqcode\\PolarDAQdata\\measurements\\tempdata\\acquisitionData_pre.bin";
+                fileNameWritefast = "C:\\Users\\Leon\\Desktop\\PolarDAQdata\\measurements\\tempdata\\acquisitionData_pre.bin";
                 //filePathWriteTextBox.Text = fileNameWrite;
                 //fileToolTip.SetToolTip(filePathWriteTextBox, fileNameWrite);
                 FileStream fsfast = new FileStream(fileNameWritefast, FileMode.Create);
