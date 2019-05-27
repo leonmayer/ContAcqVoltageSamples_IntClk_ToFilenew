@@ -43,3 +43,17 @@ C:\Users\Leon\Documents\Studium\Job\MedIT\Daq_Polar\ContAcqVoltageSamples_IntClk
 C:\Users\Leon\Documents\Studium\Job\MedIT\Daq_Polar\ContAcqVoltageSamples_IntClk_ToFile\CS\obj\Debug\ContAcqVoltageSamples_IntClk_ToFile.exe
 C:\Users\Leon\Documents\Studium\Job\MedIT\Daq_Polar\ContAcqVoltageSamples_IntClk_ToFile\CS\obj\Debug\ContAcqVoltageSamples_IntClk_ToFile.pdb
 C:\Users\Leon\Documents\Studium\Job\MedIT\Daq_Polar\ContAcqVoltageSamples_IntClk_ToFile\CS\obj\Debug\ContAcqVoltageSamples_IntClk_ToFile.2013.csprojAssemblyReference.cache
+C:\Users\leon\Documents\MedIT-Leon\Daqcode\ContAcqVoltageSamples_IntClk_ToFilenew\CS\bin\Debug\ContAcqVoltageSamples_IntClk_ToFile.exe
+C:\Users\leon\Documents\MedIT-Leon\Daqcode\ContAcqVoltageSamples_IntClk_ToFilenew\CS\bin\Debug\ContAcqVoltageSamples_IntClk_ToFile.pdb
+C:\Users\leon\Documents\MedIT-Leon\Daqcode\ContAcqVoltageSamples_IntClk_ToFilenew\CS\bin\Debug\NationalInstruments.Common.dll
+C:\Users\leon\Documents\MedIT-Leon\Daqcode\ContAcqVoltageSamples_IntClk_ToFilenew\CS\bin\Debug\NationalInstruments.NiLmClientDLL.dll
+C:\Users\leon\Documents\MedIT-Leon\Daqcode\ContAcqVoltageSamples_IntClk_ToFilenew\CS\bin\Debug\NationalInstruments.MStudioCLM.dll
+C:\Users\leon\Documents\MedIT-Leon\Daqcode\ContAcqVoltageSamples_IntClk_ToFilenew\CS\bin\Debug\NationalInstruments.Common.xml
+C:\Users\leon\Documents\MedIT-Leon\Daqcode\ContAcqVoltageSamples_IntClk_ToFilenew\CS\bin\Debug\NationalInstruments.DAQmx.xml
+C:\Users\leon\Documents\MedIT-Leon\Daqcode\ContAcqVoltageSamples_IntClk_ToFilenew\CS\obj\Debug\ContAcqVoltageSamples_IntClk_ToFile.2013.csprojAssemblyReference.cache
+C:\Users\leon\Documents\MedIT-Leon\Daqcode\ContAcqVoltageSamples_IntClk_ToFilenew\CS\obj\Debug\NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile.MainForm.resources
+C:\Users\leon\Documents\MedIT-Leon\Daqcode\ContAcqVoltageSamples_IntClk_ToFilenew\CS\obj\Debug\ContAcqVoltageSamples_IntClk_ToFile.2013.csproj.GenerateResource.cache
+C:\Users\leon\Documents\MedIT-Leon\Daqcode\ContAcqVoltageSamples_IntClk_ToFilenew\CS\obj\Debug\ContAcqVoltageSamples_IntClk_ToFile.2013.csproj.CoreCompileInputs.cache
+C:\Users\leon\Documents\MedIT-Leon\Daqcode\ContAcqVoltageSamples_IntClk_ToFilenew\CS\obj\Debug\ContAcqVoltageSamples_IntClk_ToFile.2013.csproj.CopyComplete
+C:\Users\leon\Documents\MedIT-Leon\Daqcode\ContAcqVoltageSamples_IntClk_ToFilenew\CS\obj\Debug\ContAcqVoltageSamples_IntClk_ToFile.exe
+C:\Users\leon\Documents\MedIT-Leon\Daqcode\ContAcqVoltageSamples_IntClk_ToFilenew\CS\obj\Debug\ContAcqVoltageSamples_IntClk_ToFile.pdb
