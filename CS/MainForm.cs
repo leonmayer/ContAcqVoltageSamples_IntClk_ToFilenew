@@ -1198,6 +1198,7 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
 
         private void CloseFile()
         {
+            SaveDataToBin();
             int channelCount = savedData.Count;
             int dataCount = (savedData[0] as ArrayList).Count;
 
