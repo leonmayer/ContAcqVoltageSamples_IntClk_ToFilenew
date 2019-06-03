@@ -772,11 +772,13 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
                 try
                 {
                     // Create a new file for data
+                    
                     bool opened = CreateDataFile();
                     if (!opened)
                     {
                         return;
                     }
+                    
 
                     // Modify the UI
                     stopButton.Enabled = true;
@@ -985,11 +987,13 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
 
                     double randomnum = writerout();
 
+                    /*
                     l.Add(h);
                     l.Add(m);
                     l.Add(s);
                     l.Add(ms);
                     l.Add(randomnum);
+                    */
 
                     datalistfast.Add(h);
                     datalistfast.Add(m);
@@ -1001,7 +1005,7 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
 
                 for (int j = 0; j < dataCount; j++)
                 {
-                    l.Add(data[i, j]);
+                    //l.Add(data[i, j]);
                     datalistfast.Add(data[i, j]);
                 }
             }
@@ -1235,7 +1239,7 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
                     // fileBinaryWriter.Write(Convert.ToDouble(dataCount));
                     //fileBinaryWriter.Write(dataCount.ToString());
                     int abc = 5;
-                   
+                   /*
                     for (int i = 0; i < dataCount; i++)
                     {
                         for (int j = 0; j < channelCount; j++)
@@ -1247,6 +1251,7 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
                         }
                         
                     }
+                    */
 
 
                     timer1.Stop();
@@ -1311,20 +1316,20 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
         {
             try
             {
-                FileStream fs = new FileStream(fileNameWrite, FileMode.Create);
+                //FileStream fs = new FileStream(fileNameWrite, FileMode.Create);
                 
-                fileNameWritefast = "C:\\Users\\leon\\Documents\\MedIT-Leon\\Daqcode\\PolarDAQdata\\measurements\\tempdata\\acquisitionData_pre.bin";
+                //fileNameWritefast = "C:\\Users\\leon\\Documents\\MedIT-Leon\\Daqcode\\PolarDAQdata\\measurements\\tempdata\\acquisitionData_pre.bin";
                 //filePathWriteTextBox.Text = fileNameWrite;
                 //fileToolTip.SetToolTip(filePathWriteTextBox, fileNameWrite);
-                FileStream fsfast = new FileStream(fileNameWritefast, FileMode.Create);
+                FileStream fsfast = new FileStream(fileNameWrite, FileMode.Create);
                 
                 if (useTextFileWrite)
                 {
-                    fileStreamWriter = new StreamWriter(fs);
+                    //fileStreamWriter = new StreamWriter(fs);
                 }
                 else
                 {
-                    fileBinaryWriter = new BinaryWriter(fs);
+                    //fileBinaryWriter = new BinaryWriter(fs);
                     fileBinaryWriterfast = new BinaryWriter(fsfast);
                     //fileBinaryWriterfast.Write((double)999999999999999);
                 }
@@ -1380,9 +1385,11 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
             }
             else
             {
+                /*
                 fileBinaryWriter.Write(Convert.ToDouble(numChannels));
                 fileBinaryWriter.Write(decimal.ToDouble(rateNumeric.Value));
                 fileBinaryWriter.Write(decimal.ToDouble(samplesPerChannelNumeric.Value));
+                */
 
                 fileBinaryWriterfast.Write(Convert.ToDouble(numChannels));
                 fileBinaryWriterfast.Write(decimal.ToDouble(rateNumeric.Value));
