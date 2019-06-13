@@ -854,7 +854,7 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
                     data = analogInReader.EndReadMultiSample(ar);
 
                     //Plot your data here
-                    //Displays data in grid and writes to file
+                    //Dispyyyyyyyyyyyyyyyyyyyyyyyyyyy<<<<<<<lays data in grid and writes to file
                     DisplayData(data, ref dataTable);
 
                     LogData(data);
