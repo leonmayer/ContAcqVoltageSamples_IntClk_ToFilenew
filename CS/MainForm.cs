@@ -171,8 +171,8 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
             dataTable = new DataTable();
 
             physicalChannelComboBox.Items.AddRange(DaqSystem.Local.GetPhysicalChannels(PhysicalChannelTypes.AI, PhysicalChannelAccess.External));
-            if (physicalChannelComboBox.Items.Count > 0)
-                physicalChannelComboBox.SelectedIndex = 0;
+            if (physicalChannelComboBox.Items.Count > 1)
+                physicalChannelComboBox.SelectedIndex = 1;
         }
 
         /// <summary>
@@ -273,7 +273,7 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
             this.physicalChannelComboBox.Name = "physicalChannelComboBox";
             this.physicalChannelComboBox.Size = new System.Drawing.Size(96, 21);
             this.physicalChannelComboBox.TabIndex = 1;
-            this.physicalChannelComboBox.Text = "Dev1/ai0";
+            this.physicalChannelComboBox.Text = "Dev1/ai1";
             // 
             // minimumValueNumeric
             // 
@@ -535,23 +535,23 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
             // 
             // binaryFileWriteRadioButton
             // 
+            this.binaryFileWriteRadioButton.Checked = true;
             this.binaryFileWriteRadioButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.binaryFileWriteRadioButton.Location = new System.Drawing.Point(192, 24);
             this.binaryFileWriteRadioButton.Name = "binaryFileWriteRadioButton";
             this.binaryFileWriteRadioButton.Size = new System.Drawing.Size(72, 16);
             this.binaryFileWriteRadioButton.TabIndex = 2;
+            this.binaryFileWriteRadioButton.TabStop = true;
             this.binaryFileWriteRadioButton.Text = "Binary File";
             this.binaryFileWriteRadioButton.CheckedChanged += new System.EventHandler(this.binaryFileWriteRadioButton_CheckedChanged);
             // 
             // textFileWriteRadioButton
             // 
-            this.textFileWriteRadioButton.Checked = true;
             this.textFileWriteRadioButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.textFileWriteRadioButton.Location = new System.Drawing.Point(120, 24);
             this.textFileWriteRadioButton.Name = "textFileWriteRadioButton";
             this.textFileWriteRadioButton.Size = new System.Drawing.Size(72, 16);
             this.textFileWriteRadioButton.TabIndex = 1;
-            this.textFileWriteRadioButton.TabStop = true;
             this.textFileWriteRadioButton.Text = "Text File";
             this.textFileWriteRadioButton.CheckedChanged += new System.EventHandler(this.textFileWriteRadioButton_CheckedChanged);
             // 
@@ -1278,7 +1278,7 @@ namespace NationalInstruments.Examples.ContAcqVoltageSamples_IntClk_ToFile
             {
                 FileStream fs = new FileStream(fileNameWrite, FileMode.Create);
                 
-                fileNameWritefast = "C:\\Users\\Leon\\Desktop\\PolarDAQdata\\measurements\\tempdata\\acquisitionData_pre.bin";
+                fileNameWritefast = "C:\\Temp\\acquisitionData_pre.bin";
                 //filePathWriteTextBox.Text = fileNameWrite;
                 //fileToolTip.SetToolTip(filePathWriteTextBox, fileNameWrite);
                 FileStream fsfast = new FileStream(fileNameWritefast, FileMode.Create);
